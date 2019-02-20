@@ -20,6 +20,7 @@ double distance(double x1, double y1, double z1,
 //solve a*x+b = 0
 void solve(double a, double b)
 {
+  std::cout << "Solving equation: " << a << "*x + " << b << " = " << 0 << "\n";
   if( a == 0.0 )
   {
     std::cout << "No solution\n";
@@ -40,10 +41,31 @@ double sum_of_squares(int n)
   return sum;
 }
 
+
+//solve a*x*x+b*x+c = 0
+void solve(double a, double b, double c)
+{
+  std::cout << "Solving equation: " << a << "*x^2 + " << b << "*x + " << c << " = " << 0 << "\n";
+	if( double sqb = sq(b), discr = sqb-4.0*a*c; discr < 0.0 )
+	{
+		std::cout << "No solution\n";
+	}
+	else if(discr == 0.0)
+	{
+		std::cout << "There is one solution: " << -b / (2.0*a) << "\n";
+	}
+	else
+	{
+		double sqrt_discr = std::sqrt(discr);
+		std::cout << "The two solutions are: " << (-b + sqrt_discr)/(2.0*a) << " and " << (-b - sqrt_discr)/(2.0*a) << "\n";
+	}
+}
+
  
 int main()
 {
-    solve(612.0, 15.0);
-    std::cout << length(1.0, 2.0, 3.0) << "\n";
+    solve(2.0, 20.0);
+    solve(4.0, -5.0, 1.0);
+    std::cout << "Length of vector: " << length(1.0, 1.0, 2.0) << "\n";
     return 0;
 }
