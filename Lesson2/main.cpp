@@ -46,19 +46,19 @@ double sum_of_squares(int n)
 void solve(double a, double b, double c)
 {
   std::cout << "Solving equation: " << a << "*x^2 + " << b << "*x + " << c << " = " << 0 << "\n";
-	if( double sqb = sq(b), discr = sqb-4.0*a*c; discr < 0.0 )
-	{
-		std::cout << "No solution\n";
-	}
-	else if(discr == 0.0)
-	{
-		std::cout << "There is one solution: " << -b / (2.0*a) << "\n";
-	}
-	else
-	{
-		double sqrt_discr = std::sqrt(discr);
-		std::cout << "The two solutions are: " << (-b + sqrt_discr)/(2.0*a) << " and " << (-b - sqrt_discr)/(2.0*a) << "\n";
-	}
+  if( double sqb = sq(b), discr = sqb-4.0*a*c; discr < 0.0 )
+  {
+    std::cout << "No solution\n";
+  }
+  else if(discr == 0.0)
+  {
+    std::cout << "There is one solution: " << -b / (2.0*a) << "\n";
+  }
+  else
+  {
+    double sqrt_discr = std::sqrt(discr);
+    std::cout << "The two solutions are: " << (-b + sqrt_discr)/(2.0*a) << " and " << (-b - sqrt_discr)/(2.0*a) << "\n";
+  }
 }
 
  
