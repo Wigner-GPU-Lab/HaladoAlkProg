@@ -1,4 +1,5 @@
-Haladó Alaklamzott Programozás
+Haladó Alkalamzott Programozás
+
 Advanced Applied Programming
 ===================
 
