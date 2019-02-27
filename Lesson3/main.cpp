@@ -21,13 +21,13 @@ int main()
     std::cout << "b = " << b << "\n";
 
     int    a = sq<int>(4); //16
-    std::cout << "a = " << b << "\n";
+    std::cout << "a = " << a << "\n";
     
     double b2 = sq(2.5); //6.25
     std::cout << "b2 = " << b2 << "\n";
 
     int    a2 = sq(4); //16
-    std::cout << "a2 = " << b2 << "\n";
+    std::cout << "a2 = " << a2 << "\n";
 
     double I1 = integrate([](double x){ return x*x; }, 100, 0.0, 1.0);
     double I2 = integrate(sq<double>, 100, 0.0, 1.0);
