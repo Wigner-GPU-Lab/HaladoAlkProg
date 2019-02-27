@@ -15,11 +15,15 @@ Table of Contents:
   
 2. Lesson
 
-   Simple functions, solving a linear and a quadratic equation [main.cpp](./Lesson2/main.cpp)
+   Simple functions, solving a linear and a quadratic equation
+   
+   [main.cpp](./Lesson2/main.cpp)
   
 3. Lesson
 
-   Type parameters, function templates, writing an integrator with function parameter [main.cpp](./Lesson3/main.cpp)
+   Type parameters, function templates, writing an integrator with function parameter
+   
+   [main.cpp](./Lesson3/main.cpp)
    
 4. Lesson
 
