@@ -31,9 +31,10 @@ int main()
 
     double I1 = integrate([](double x){ return x*x; }, 100, 0.0, 1.0);
     double I2 = integrate(sq<double>, 100, 0.0, 1.0);
+    double exact = 1.0 / 3.0;
 
     std::cout.precision(16);
-    std::cout << "I1 = " << I1 << " exact: " << 1.0 / 3.0 << "\n";
-    std::cout << "I2 = " << I2 << " exact: " << 1.0 / 3.0 << "\n";
+    std::cout << "I1 = " << I1 << " exact: " << exact << " difference: " << I1 - exact << "\n";
+    std::cout << "I2 = " << I2 << " exact: " << exact << " difference: " << I2 - exact << "\n";
     return 0;
 }
