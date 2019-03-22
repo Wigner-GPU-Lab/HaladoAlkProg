@@ -270,9 +270,9 @@ std::ostream& operator<< (std::ostream& o, Vector<T> const& v)
 	{
 		for(int i=0; i<n-1; ++i)
 		{
-			std::cout << v[i] << "   ";
+			o << v[i] << "   ";
 		}
-		std::cout << v[n-1];
+		o << v[n-1];
 	}
 	return o;
 }
